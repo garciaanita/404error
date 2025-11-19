@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Error 404 · Lost in Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="space">
+      <!-- Capa de estrellas generadas por JS -->
+      <div id="stars" class="stars-layer"></div>
+
+      <!-- Estrellas fugaces -->
+      <div class="shooting-stars">
+        <span class="shooting-star"></span>
+        <span class="shooting-star"></span>
+        <span class="shooting-star"></span>
+      </div>
+
+      <!-- Planeta grande -->
+      <div class="layer big-planet-layer" data-depth="0.12">
+        <div class="planet big-planet"></div>
+      </div>
+
+      <!-- Planeta con anillo -->
+      <div class="layer ring-planet-layer" data-depth="0.25">
+        <div class="planet ring-planet">
+          <div class="ring"></div>
+        </div>
+      </div>
+
+      <!-- Astronauta flotando -->
+      <div class="layer astronaut-layer" data-depth="0.18">
+        <div class="floating-astronaut">
+          <div class="astro-helmet"></div>
+          <div class="astro-body"></div>
+          <div class="astro-arm arm-left"></div>
+          <div class="astro-arm arm-right"></div>
+          <div class="astro-leg leg-left"></div>
+          <div class="astro-leg leg-right"></div>
+          <div class="astro-cable"></div>
+        </div>
+      </div>
+
+      <!-- Ovni orbitando -->
+      <div class="layer ufo-layer" data-depth="0.3">
+        <div class="ufo-orbit">
+          <div class="ufo"></div>
+        </div>
+      </div>
+
+      <!-- Contenido principal -->
+      <main class="content">
+        <p class="eyebrow">Houston, tenemos un problema</p>
+
+        <h1 class="title-404">
+          <span>4</span><span class="zero">0</span><span>4</span>
+        </h1>
+
+        <h2 class="subtitle">Te has perdido en el espacio</h2>
+
+        <p class="description">
+          La página que buscas ha salido de órbita o nunca existió. Mientras la
+          buscamos en otra galaxia, puedes volver a la base.
+        </p>
+
+        <div class="button-row">
+          <a href="/" class="btn btn-primary">Volver al inicio</a>
+          <button type="button" class="btn btn-ghost" id="toggle-lights">
+            Apagar / encender estrellas
+          </button>
+        </div>
+
+        <p class="hint">Tip: mueve el ratón para desplazar el universo.</p>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
